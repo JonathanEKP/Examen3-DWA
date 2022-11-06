@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <section class="row m-0 mt-5">
+        <div class="col-12">
+            <h1 class="text-center animation">Un sitio de juegos con los mejores <span class="text-danger"> productos</span></h1>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <img src="../assets/img/mouse.png" alt="" id="mouse" class="col-4 animation border-right">
+                <img src="../assets/img/teclado.png" alt="" id="teclado" class="col-4 animation border-right">
+                <img src="../assets/img/mousepad.png" alt="" id="mousepad" class="col-4 animation ">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let tween = gsap.from('.animation', {
+            duration: 0.5,
+            y: -200, //'random(-500,500)',
+            scale: 0,
+            stagger: 0.5,
+            delay: 2 // it's better to use timeline
+        });
+
+
+    </script>
+</body>
+</html>
