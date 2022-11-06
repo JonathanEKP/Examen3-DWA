@@ -29,6 +29,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 <body class="theme-red">
   
@@ -60,7 +62,7 @@
     </div>
   </div>
   
-  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_1.jpg)">
+  <div class="vg-page page-home" id="home" >
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
@@ -96,15 +98,54 @@
       </div>
     </div> <!-- End Navbar -->
     <!-- Caption header -->
-    <div class="caption-header text-center wow zoomInDown">
+    <!--<div class="caption-header text-center wow zoomInDown">
       <h5 class="fw-normal">Welcome</h5>
       <h1 class="fw-light mb-4">Tecnology is the<b class="fg-theme"> FUTURE</b>.</h1>
       <div class="badge">Gaming portal</div>
-    </div> <!-- End Caption header -->
-    <div class="floating-button"><span class="ti-mouse"></span></div>
+    </div>  End Caption header 
+    <div class="floating-button"><span class="ti-mouse"></span></div>-->
+
+    
   </div>
+
+  <section class="row bg-dark">
+    <div class="col-12  animation-h1 text-center mt-5 text-white">
+      <h5 class="fw-normal">Welcome</h5>
+      <h1 class="fw-light">Tecnology is the<b class="fg-theme"> FUTURE</b>.</h1>
+      <span class="rounded-pill bg-white text-dark p-1 fw-bold m-3">Gaming portal</span>
+    </div>
+    <div class="col-12 mt-2">
+        <div class="row">
+            <div class="card col-12 col-sm-4 animation border-right border-top-0 border-bottom-0 border-left-0 bg-transparent" style="width: 10rem;">
+                <img src="../assets/img/mouse.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text text-center mb-4 textProduct text-white">Razer Mamba</p>
+                </div>
+            </div>
+            <div class="card col-12 col-sm-4  animation border-right border-top-0 border-bottom-0 border-left-0 bg-transparent" style="width: 10rem;">
+                <img src="../assets/img/teclado.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text text-center mb-4 textProduct text-white">Razer BlackWidow</p>
+                    
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-4  animation border-right-0 border-top-0 border-bottom-0 border-left-0 bg-transparent" style="width: 10rem;">
+                <img src="../assets/img/mousepad.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text text-center mb-4 textProduct text-white">Pad Mouse Razer Goliathus</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
   
-  <div class="vg-page page-about" id="about">
+  <!--<div class="vg-page page-about" id="about">
     <div class="container py-5">
       <div class="row">
         <div class="col-lg-4 py-3">
@@ -245,7 +286,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   
   <div class="vg-page page-service">
     <div class="container">
@@ -774,6 +815,42 @@
   <script src="../assets/js/topbar-virtual.js"></script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+
+  <script>
+    /*let tween = gsap.from('.animation', {
+        duration: .1,
+        y: -200, //'random(-500,500)',
+        scale: 0,
+        stagger: 0.5,
+        delay: 2 // it's better to use timeline
+    });*/
+
+    let tl = gsap.timeline();
+    tl.from('.animation-h1', {
+        duration: 0.4,
+        y: -200,
+        scale: 0,
+        stragger: 0.5,
+        delay: 1
+    });
+
+
+    tl.from('.animation', {
+        duration: 0.4,
+        y: -200,
+        scale: 0,
+        stragger: 0.5,
+        delay: 1
+    });
+
+    tl.addLabel('label1', "+=1");
+
+    tl.from('.textProduct', {
+        duration: .2,
+        scale: 0,
+        stagger: .5
+    }, '+=1');
+</script>
   
 </body>
 </html>
