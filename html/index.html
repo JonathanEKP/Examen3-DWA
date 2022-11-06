@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_1.jpg)">
+  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_home.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
@@ -83,10 +83,10 @@
               <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+              <a href="#product" class="nav-link" data-animate="scrolling">Product</a>
             </li>
             <li class="nav-item">
-              <a href="#product" class="nav-link" data-animate="scrolling" onclick="gsap.timeline()">Product</a>
+              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
             </li>
             <li class="nav-item">
               <a href="#api" class="nav-link" data-animate="scrolling">API</a>
@@ -111,6 +111,50 @@
     </div>
     <!--End Caption header -->
     <div class="floating-button"><span class="ti-mouse"></span></div>
+  </div>
+
+  <div class="vg-page page-portfolio bg-white mt-0" id="product">
+    <div class="text-center wow fadeInUp fg-theme">
+      <div class="badge badge-subhead">Productos</div>
+    </div>
+    <section class="row">
+      <div class="col-12  animation-h1 text-center mt-5 text-black">
+        <h1 class="fw-light">Esto es<b class="fg-theme"> Razer </b>.</h1>
+        <span class="rounded-pill bg-white text-dark p-1 fw-bold m-3">Productos Gaming</span>
+      </div>
+      <div class="col-12 mt-4">
+        <div class="row">
+          <div
+            class="card col-12 col-sm-4 animation border-right border-dark border-top-0 border-bottom-0 border-left-0 bg-transparent"
+            style="width: 10rem;">
+            <img src="../assets/img/mouse.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-center mb-4 textProduct text-black">Razer Mamba</p>
+            </div>
+          </div>
+          <div
+            class="card col-12 col-sm-4  animation border-right border-dark border-top-0 border-bottom-0 border-left-0 bg-transparent"
+            style="width: 10rem;">
+            <img src="../assets/img/teclado.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-center mb-4 textProduct text-black">Razer BlackWidow</p>
+
+            </div>
+          </div>
+          <div
+            class="card col-12 col-sm-4  animation border-right-0 border-top-0 border-bottom-0 border-left-0 bg-transparent"
+            style="width: 10rem;">
+            <img src="../assets/img/mousepad.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-center mb-4 textProduct text-black">Pad Mouse Razer Goliathus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <div class="vg-page page-service" id="about">
@@ -389,49 +433,7 @@
   </div><!-- End About -->
 
   <!-- PRODUCT -->
-  <div class="vg-page page-portfolio" id="product">
-    <div class="text-center wow fadeInUp fg-theme">
-      <div class="badge badge-subhead">Productos</div>
-    </div>
-    <section class="row bg-dark">
-      <div class="col-12  animation-h1 text-center mt-5 text-white">
-        <h1 class="fw-light">Esto es<b class="fg-theme"> Razer </b>.</h1>
-        <span class="rounded-pill bg-white text-dark p-1 fw-bold m-3">Productos Gaming</span>
-      </div>
-      <div class="col-12 mt-2">
-        <div class="row">
-          <div
-            class="card col-12 col-sm-4 animation border-right border-top-0 border-bottom-0 border-left-0 bg-transparent"
-            style="width: 10rem;">
-            <img src="../assets/img/mouse.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text text-center mb-4 textProduct text-white">Razer Mamba</p>
-            </div>
-          </div>
-          <div
-            class="card col-12 col-sm-4  animation border-right border-top-0 border-bottom-0 border-left-0 bg-transparent"
-            style="width: 10rem;">
-            <img src="../assets/img/teclado.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text text-center mb-4 textProduct text-white">Razer BlackWidow</p>
-
-            </div>
-          </div>
-          <div
-            class="card col-12 col-sm-4  animation border-right-0 border-top-0 border-bottom-0 border-left-0 bg-transparent"
-            style="width: 10rem;">
-            <img src="../assets/img/mousepad.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text text-center mb-4 textProduct text-white">Pad Mouse Razer Goliathus</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+  
 
   <!-- API -->
   <div class="vg-page page-contact" id="api">
@@ -701,7 +703,7 @@
 
     let tl = gsap.timeline();
     tl.from('.animation-h1', {
-      duration: 0.4,
+      duration: 1,
       y: -200,
       scale: 0,
       stragger: 0.5,
