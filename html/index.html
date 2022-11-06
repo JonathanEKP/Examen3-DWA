@@ -10,14 +10,16 @@
   
   <title>Sitio Web TecnoStar - Examen 3</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
   <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+
+
 
   <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
   
@@ -630,20 +632,16 @@
     <div class="text-center wow fadeInUp">
       <div class="badge badge-subhead">Contacto</div>
     </div>
-    <h1 class="text-center fw-normal wow fadeInUp">Formulario Validado con JQuery</h1><br><br>
-    <form class="form-horizontal" id="formJQ">
-      <div class="form-group">
-        <label for="nombre" class="col-sm-2 control-label wow fadeInRight">Nombre:</label>
-        <div class="col-sm-2">
-          <input type="text" id="nombre" name="nombre" class="form-control wow fadeInUp">
+    <h1 class="text-center fw-normal wow fadeInUp">Formulario Validado con JQuery</h1>
+    <form class="vg-contact-form" id="formJQ">
+      <div class="form-row">
+        <div class="col-6 mt-3">
+          <input type="text" id="nombre" name="nombre" class="form-control wow fadeInUp" placeholder="Nombres">
         </div>
-        <label for="apellido" class="col-sm-1 control-label wow fadeInRight">Apellido:</label>
-        <div class="col-sm-2">
-          <input type="text" id="apellido" name="apellido" class="form-control wow fadeInUp">
+        <div class="col-6 mt-3">
+          <input type="text" id="apellido" name="apellido" class="form-control wow fadeInUp" placeholder="Apellidos">
         </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-2">
+        <div class="col-4 mt-3">
           <span class="wow fadeInRight"><strong>Sexo:</strong></span><br>
           <div class="radio wow fadeInUp">
             <label><input type="radio" name="count" value="Masculino">Masculino</label>
@@ -655,25 +653,16 @@
             <label><input type="radio" name="count" value="Indefinido">Indefinido</label>
           </div>
         </div>
-        <div class="form-group">
-          <label for="comments" class="col-sm-1 control-label wow fadeInRight">Comentarios:</label>
-          <div class="col-sm-6">
-            <textarea name="comments" id="comments" cols="40" rows="5" class="form-control wow fadeInUp"></textarea>
+          <div class="col-8 mt-3">
+            <textarea name="comments" id="comments" cols="40" rows="5" class="form-control wow fadeInUp" placeholder="Comentarios..."></textarea>
           </div>
+        <div class="col-6 mt-3">
+          <input type="number" id="edad" name="edad" class="form-control wow fadeInUp" placeholder="Edad">
         </div>
-      </div>
-      <div class="form-group">
-        <label for="edad" class="col-sm-2 control-label wow fadeInRight">Edad:</label>
-        <div class="col-sm-4">
-          <input type="number" id="edad" name="edad" class="form-control wow fadeInUp">
+        <div class="col-6 mt-3">
+          <input type="text" id="tel" name="tel" class="form-control wow fadeInUp" placeholder="Telefono">
         </div>
-        <label for="tel" class="col-sm-1 control-label wow fadeInRight">Telefono:</label>
-        <div class="col-sm-4">
-          <input type="text" id="tel" name="tel" class="form-control wow fadeInUp">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-4">
+        <div class="col-6 mt-3">
           <span class="wow fadeInRight"><strong>Intereses:</strong></span><br>
           <div class="checkbox wow fadeInUp">
             <label><input type="checkbox" value="Entretenimiento">Entretenimiento</label>
@@ -694,7 +683,7 @@
             <label><input type="checkbox" value="Finanzas">Finanzas</label>
           </div>
         </div>
-        <div class="col-sm-offset-1 col-sm-4">
+        <div class="col-6 mt-3">
           <label for="depa" class="wow fadeInRight">Departamento</label>
           <select name="depa" id="depa" class="form-control wow fadeInUp">
             <option value="">--Seleccionar--</option>
@@ -714,41 +703,27 @@
             <option value="La Unión">La Unión</option>
           </select>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="correo" class="col-sm-2 control-label wow fadeInRight">Correo:</label>
-        <div class="col-sm-8">
-          <input type="text" id="correo" name="correo" class="form-control wow fadeInUp">
+        <div class="col-12 mt-3">
+          <input type="text" id="correo" name="correo" class="form-control wow fadeInUp" placeholder="Correo">
         </div>
-      </div>
-
-      <div class="form-group">
-        <label for="user" class="col-sm-2 control-label wow fadeInRight">Usuario:</label>
-        <div class="col-sm-4">
-          <input type="text" id="user" name="user" class="form-control wow fadeInUp">
+        <div class="col-6 mt-3">
+          <input type="text" id="user" name="user" class="form-control wow fadeInUp" placeholder="Usuario">
         </div>
-        <label for="password" class="col-sm-1 control-label wow fadeInRight">Contraseña:</label>
-        <div class="col-sm-4">
-          <input type="password" id="password" name="password" class="form-control wow fadeInUp">
+        <div class="col-6 mt-3">
+          <input type="password" id="password" name="password" class="form-control wow fadeInUp" placeholder="Contrasena">
         </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-8">
+        <div class="col-6 mt-3">
           <div class="checkbox">
             <label class="wow fadeInRight"> <input type="checkbox" id="agree" name="agree" value="agree">Estoy de
               acuerdo con los Terminos y Condiciones.</label>
           </div>
           <em id="agree-error" class="help-block"></em>
         </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-8">
+        <div class="col-6 mt-3">
           <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1" onclick="ValEnvio()"
             onfocus="ValidityState()">Enviar</button>
-        </div>
       </div>
+    </div>
     </form>
   </div>
 </div>
@@ -846,6 +821,7 @@
   }
 </script>
 
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -856,6 +832,7 @@
   integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
   crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+
 <!-- partial -->
 <script src="../assets/js/valid-form.js"></script>
 
