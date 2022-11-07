@@ -78,16 +78,16 @@ $(document).ready(function(){
         }
      },
      highlight: function ( element, errorClass, validClass ) {
-      $( element ).parents( ".col-4" ).addClass( "has-error" ).removeClass( "has-success" );
-      $( element ).parents( ".col-6" ).addClass( "has-error" ).removeClass( "has-success" );
-      $( element ).parents( ".col-8" ).addClass( "has-error" ).removeClass( "has-success" );
-      $( element ).parents( ".col-12" ).addClass( "has-error" ).removeClass( "has-success" );
+      $( element ).parents( ".col-4" ).addClass( "alert-danger" ).removeClass( "alert-success" );
+      $( element ).parents( ".col-6" ).addClass( "alert-danger" ).removeClass( "alert-success" );
+      $( element ).parents( ".col-8" ).addClass( "alert-danger" ).removeClass( "alert-success" );
+      $( element ).parents( ".col-12" ).addClass( "alert-danger" ).removeClass( "alert-success" );
      },
      unhighlight: function (element, errorClass, validClass) {
-      $( element ).parents( ".col-4" ).addClass( "has-success" ).removeClass( "has-error" ); 
-      $( element ).parents( ".col-6" ).addClass( "has-success" ).removeClass( "has-error" ); 
-      $( element ).parents( ".col-8" ).addClass( "has-success" ).removeClass( "has-error" ); 
-      $( element ).parents( ".col-12" ).addClass( "has-success" ).removeClass( "has-error" ); 
+      $( element ).parents( ".col-4" ).addClass( "alert-success" ).removeClass( "alert-danger" );
+      $( element ).parents( ".col-6" ).addClass( "alert-success" ).removeClass( "alert-danger" );
+      $( element ).parents( ".col-8" ).addClass( "alert-success" ).removeClass( "alert-danger" ); 
+      $( element ).parents( ".col-12" ).addClass( "alert-success" ).removeClass( "alert-danger" );
      } 
   });
 });
